@@ -63,21 +63,21 @@ public class CalculatorTest {
     public void testFirstArgumentIsNotNull() {
         Calculator calculator = new Calculator();
         int result = calculator.add(9, 0);
-        assertNotNull(result/9);
+        assertNotNull(result);
     }
 
     @Test
     public void testSecondArgumentIsNotNull() {
         Calculator calculator = new Calculator();
         int result = calculator.subtract(0, -3);
-        assertNotNull(result/ -3);
+        assertNotNull(result);
     }
 
     @Test
-    public void theFirstArgumentIsGreaterThemTheSecond(){
+    public void testTheFirstArgumentIsGreaterThemTheSecond(){
         Calculator calculator = new Calculator();
+        boolean compare = calculator.compare( 0, -3);
         assertTrue(0 > -3);
     }
-
 
 }
