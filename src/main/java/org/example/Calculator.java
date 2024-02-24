@@ -16,7 +16,17 @@ public class Calculator {
         if (a > b) theyAreEqual = true;
         else theyAreEqual = false;
         return theyAreEqual;
+    }
 
+    public double divide (double a, double b){
+        if (b == 0){
+            throw new IllegalArgumentException();
+        }
+        return a/b;
+
+    }
+    public double multiply(double a, double b) {
+        return a * b;
     }
 
 }

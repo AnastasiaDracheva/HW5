@@ -103,4 +103,17 @@ public class CalculatorTest {
         assertTrue(0 > -3);
     }
 
+    @Test
+    public void testResultOfDivision(){
+        double a = 36;
+        double b = 6;
+        double result = calculator.divide(a,b);
+        assertNotEquals(0.0,result);
+    }
+
+    @Test
+    public  void testResultOfMultiplicationIsAnEvenNumber(){
+        double result = calculator.multiply(4,5);
+        assertTrue(  result % 2 == 0 );
+    }
 }
